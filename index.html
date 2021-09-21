@@ -1,118 +1,132 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
-<!--Main Tab Title and link to style sheet-->
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Rayna Ratcliff's Portfolio Pag" />
   <title>Rayna Ratcliff's Portfolio Page</title>
-  <link rel="stylesheet" href="style.CSS">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!--Header-->
-    <span class="header">
-      <h1>Rayna Ratcliff</h1>
-    
-    <!--Navigation Bar-->
-      <nav>
-        <ul>
-          <li><a href="#About-Me">About Me</a></li>
-          <li><a href="#Work">Work</a></li>
-          <li><a href="#Contact-Me">Contact Me</a></li>
-          <li><a href="https://drive.google.com/file/d/1FriNRF_mdgFR3Dm1B18Fgl6rstZP4iwg/view">Resume</a></li>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid" id="nav">
+      <a class="navbar-brand" href="https://www.linkedin.com/in/rayna-ratcliff-69a69517b">LinkedIn Profile</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="About-Me" href="#About-Me">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="Work" href="#Work">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="Contact-Me" href="#Contact-Me">Contact Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://docs.google.com/document/d/1r3P_snbH0ZNfDPsPTtYOEZGcK3XhfWjWRoyVxDoQNg0/edit?usp=sharing">Resume</a>
+          </li>
         </ul>
-      </nav>
-  </span>
+    </div>
+  </nav>
 
-  <!--Subtitle Section with image-->
-  <span class="trust">
-    <img src='Assets\images\self.jpg' alt='Rayna Ratcliff' class='self'>
-    <img src ='Assets\images\California .jpg' alt='Jedediah Smith Redwoods State Park California' class="California">
-    
-    <h2>Find the Beauty in the Unknown</h2>
-    
-  </span>
+  <body>
+    <header class="jumbotron jumbotron-fluid" id="bonjour">
+      <div class="container" id="header">
+        <div class="row align-items-start">
+          <div class="col-12 col-md-6">
+            <img class="img-responsive img-thumbnail center-block d-block ml-auto" src="Assets\images\self.jpg" id="self" alt="Rayna Ratcliff Profile Image" />
+          </div>
+          <div class="col-12 col-md-6" id="information">
+            <h1>Rayna Ratcliff</h1>
+            <h2>Web Developer</h2>
+            <p class="font-italic">"Find the Beauty in the <strong>Unknown"</strong></p>
+          </div>
+        </div>
+      </div>
+    </header>
 
-
-
-<!--Main Content of the Page containing about me, work and contact-->
-<main class="content">
-  
-  <!---The span tag is an in-line HTML element. This has a class of "container" and will hold it's children.--->
-  <span class="container">
-    <!-- h3 and p are the children to the "span" tag. These will get their own properties to style. --->
- 
-      <h3 id ="About-Me">
-            About Me
-        </h3>
-        <p><pre>
-          Hello!
-
-          My name is Rayna Ratcliff and I’m based out of central Ohio. I’m from a small town but wanted to make sure I got out into the world to experience 
-          more than just small town life. I lived in Oregon for two years before coming back to Ohio and graduating from The Ohio State University. Currently
-          am working at LabCorp a national clinical laboratory as a client services supervisor for premier clients. Am apart of WEN (Women’s Empowerment Network) 
-          chapter as a champion, supporting and encouraging women within the organization. 
-          
-        </pre></p>
-      
-    </span>
-
-
-  
-<!--Span to inline container to align phrasing content-->
-  <span class="work-content">
-    <!--Header 4 for the Work Section-->
-    <h4 id ="Work">
-       Work
-    </h4>
-  
-     <!--Paragraph section to containing the images and links for my work project-updating when finish projects within the course-->
+<main class="container">
+  <section class="row">
+    <div class="col-12 col-md-3">
+      <h1 id ="About-Me">
+        About Me
+    </h1>
     <p>
-      <img src='Assets\images\mountain.jpg' alt='Project 1' class='left'>
-        
-        <!--div class for project 1 to set the link color and to position over the image--> 
-        <div class="mountain">
-          <a href="https://raynaratcliff.github.io/prework-about-me/">Project 1</a>
-        </div>
-  
-      <img src='Assets\images\grand-canyon-yellowstone.jpg' alt='Project 2' class='center'>
-             
-        <!--div class for project 2 to set the link color and to position over the image--> 
-        <div class="grand">
-          <a href= "https://raynaratcliff.github.io/Homework-1/">Project 2</a>
-        </div>
-  
-      <img src='Assets\images\grand-prismatic.jpg' alt='Project 3' class='right'>
-            
-        <!--div class for project 3 to set the link color and to position over the image--> 
-        <div class="prism">
-              <a href= "https://scratch.mit.edu/projects/553799741/">Project 3</a>
-        </div>
-  
-    </p>
-  </span>
-
-   <!--Contact content-->
-    <span class="contact-content">
-
-    <!-- h4 and ul are the children to the "span" tag. These will get their own properties to style. --->
-      <h5 id ="Contact-Me">
-        Contact Me</h5>
-
-    <!--List itemts for contact information-->
-      <ul>
-       <li>740-703-9759</li>       
-       <li>raynarratcliff@gmail.com</li>
-       <li><a href="https://github.com/raynaratcliff">GitHub</a></li>
-       <li><a href="https://www.linkedin.com/in/rayna-ratcliff-69a69517b">LinkedIn Profile</a></li> 
-       </ul>
+      Hello!
     
-    </span>
+      My name is Rayna Ratcliff and I’m based out of central Ohio. I’m from a small town but wanted to make sure I got out into the world to experience 
+      more than just small town life. I lived in Oregon for two years before coming back to Ohio and graduating from The Ohio State University. Currently
+      am working at LabCorp a national clinical laboratory as a client services supervisor for premier clients. Am apart of WEN (Women’s Empowerment Network) 
+      chapter as a champion, supporting and encouraging women within the organization. 
+    </p>
+    </div>
 
-  </div>
+    <div class="col-12 col-md-9">
+      <h3 id="Work">Work</h3>
+  <section class="row justify-content-around">
+        <div class="col-12 col-sm-6 col-lg-4 mb-3">
+          <div class="card">
+            <h4 class="card-header">
+              Project 1
+            </h4>
+            <img class="img-fluid" src="Assets\images\mountain.jpg" class="Project-1" alt="BitCoin">
+            <div class="card-body">
+              <p class="card-text">
+                BitCoin Hub
+              </p>
+              <a href="https://jenkinsmd.github.io/GrpPrj1-Bitcoin/" class="btn btn-info">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 mb-3">
+          <div class="card">
+            <h4 class="card-header">
+              Project 2
+            </h4>
+            <img class="img-fluid" src="Assets\images\grand-canyon-yellowstone.jpg" class="Project-2" alt="Weather-Dashboard">
+            <div class="card-body">
+              <p class="card-text">
+                Weather Dashboard
+              </p>
+              <a href="https://raynaratcliff.github.io/WeatherDashboard-HW6/" class="btn btn-info">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 mb-3">
+          <div class="card">
+            <h4 class="card-header">
+              Project 3
+            </h4>
+            <img class="img-fluid" src="Assets\images\grand-prismatic.jpg" class="Project-3" alt="WorkDay-Scheduler">
+            <div class="card-body">
+              <p class="card-text">
+                Work Day Scheduler 
+              </p>
+              <a href="https://raynaratcliff.github.io/Work-Day-Scheduler-HW5/" class="btn btn-info">View</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+<div class="footer">
+  <section class="row">
+    <div class="col-12 col-sm-6 col-lg-4 mb-3">
+    <h4 id="Contact-Me">Contact Me</h4>
+    </div>
+      Phone: 740-703-9759 | Email: raynarratcliff@gmail.com | <a href="https://github.com/raynaratcliff">GitHub</a> | <a href="https://www.linkedin.com/in/rayna-ratcliff-69a69517b">LinkedIn Profile</a>
+    </div>
+</div>
+</div>
+</section>
+</container>
 </main>
-
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
